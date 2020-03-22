@@ -1,0 +1,8 @@
+
+# Exclude node modules, remove this if you feel like having a bad time
+node_modules/
+
+# Exclude compiled files
+dist/*.js
+dist/*.css
+dist/*.tsv

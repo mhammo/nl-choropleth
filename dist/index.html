@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+	 crossorigin=""/>
+	 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600&display=swap" rel="stylesheet"> 
+	<link href="main.css" rel="stylesheet">
+	<style>
+	
+	</style>
+</head>
+
+<body style="cursor: auto;">
+	<div class="map-container">
+		<div class="map-header">
+			Distribution by UK Parliamentary Constituency - Lottery Grant Applications
+		</div>
+		<div class="map">		
+			<div id="map"></div>
+			<div class="map__sidebar">
+				<div class="map__sidebar_row map__sidebar_row--reverse">
+						<span class="map__sidebar_close">&times;</span>
+				</div>				
+				<div id="valueHistogram"></div>
+				<div id="countHistogram"></div>
+			</div>
+		</div>		
+	</div>	
+	<script src="https://polyfill.io/v3/polyfill.min.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="site.js"></script>	
+	<script>
+		var map = ecorys.generateMapAndTopo('map', 'data.tsv');
+	</script>
+</body>
+
+</html>
